@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Anaskhan's portfolio - Full Stack Developer, Agentic AI & Cloud Engineer. View recent projects, tech skills, and contact details." />
+  <meta name="keywords" content="Anaskhan, Full Stack Developer, Agentic AI, Cloud Engineer, Portfolio, Projects, Resume" />
+  <meta name="author" content="Anaskhan" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Anaskhan – Full Stack Developer | Agentic AI | Cloud Engineer</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="/src/css/style.css" as="style" />
+  <link rel="stylesheet" href="/src/css/style.css" />
+
+  <!-- Preload Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </noscript>
+
+  <!-- Async Font Awesome -->
+  <script defer src="https://kit.fontawesome.com/dcaf69cdd3.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="w-full lg:w-2/3 mx-auto dark:bg-gray-900 relative">
+
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav class="fixed top-0 z-20 w-full lg:w-2/3 border-b lg:border-none border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 px-2 sm:px-4 py-3"
+      aria-label="Main Navigation">
+      <div class="container mx-auto flex flex-wrap items-center justify-between flex-row-reverse lg:flex-row">
+
+        <!-- Logo -->
+        <a href="/" class="pr-2" title="Anaskhan Portfolio Homepage" aria-label="Anaskhan Home">
+          <i class="fa-solid fa-code fa-md text-blue-600 dark:text-gray-300"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button data-collapse-toggle="navbar" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 md:hidden dark:text-gray-300 dark:hover:text-gray-100"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar">
+          <ul class="flex flex-col mt-4 items-start md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium lg:items-center">
+
+            <!-- Home -->
+            <li>
+              <a href="/" class="block py-2 pl-3 pr-4 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                aria-current="page" title="Go to Home">
+                🏠 Home
+              </a>
+            </li>
+
+            <!-- Resume -->
+            <li>
+              <a href="https://drive.google.com/file/d/1fVBl_aoSYkCiorO_NTUwq8s_gtvtst9-/view?usp=sharing" target="_blank"
+                rel="noopener noreferrer"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 dark:hover:text-white md:dark:hover:bg-transparent"
+                title="View Resume PDF">
+                📄 Resume
+              </a>
+            </li>
+
+            <!-- Theme Toggle -->
+            <li>
+              <button id="theme-toggle" type="button" aria-label="Toggle dark/light theme"
+                class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z">
+                  </path>
+                </svg>
+              </button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Main content area -->
+  <main class="px-4 lg:px-8 pt-16">
+    <section class="py-6 lg:py-14">
+      <div class="container flex flex-col lg:flex-row items-start justify-start">
+        
+        <!-- Profile image left -->
+        <div class="lg:pr-8 w-2/6 lg:w-full pb-4 lg:pb-4">
+        <img
+        class="w-full rounded-full p-1 ring-2 ring-blue-400 dark:ring-gray-500 shadow-lg"
+        src="/images/anaskhan.webp"
+        loading="lazy"
+        decoding="async"
+        alt="Profile picture of Anaskhan - Full Stack Developer and AI Engineer"
+        width="300"
+        height="400"
+        />
+
+        </div>
+        
+        <!-- Main content right -->
+        <div>
+          
+          <!-- Header area -->
+          <header class="header mb-16" role="banner">
+            <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-200">Anaskhan — Full Stack, Agentic AI & Cloud Specialist</h1>
+            <p class="text-sm text-gray-700 dark:text-gray-500 mt-1">Analytical, self-motivated, and confident technology professional.</p>
+            <h2 class="text-gray-800 dark:text-gray-400 text-justify mt-2">Expert in Full-Stack Development, Agentic AI, and Cloud Engineering</h2>
+
+            <nav aria-label="Social media links" class="flex mt-6 space-x-4">
+              <a href="https://www.facebook.com/profile.php?id=61573392250986" target="_blank" rel="noopener noreferrer" class="flex items-center font-light text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span>Facebook</span>
+                <span class="sr-only">Facebook profile of Anaskhan</span>
+              </a>
+
+              <a href="/" target="_blank" rel="noopener noreferrer" class="flex items-center font-light text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                </svg>
+                <span>Twitter</span>
+                <span class="sr-only">Twitter profile of Anaskhan</span>
+              </a>
+
+              <a href="https://github.com/anaskhan-xo" target="_blank" rel="noopener noreferrer" class="flex items-center font-light text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span>GitHub</span>
+                <span class="sr-only">GitHub profile of Anaskhan</span>
+              </a>
+            </nav>
+
+            <div id="header-tags" class="my-4" aria-hidden="true">
+              <!-- Optional header tags / keywords -->
+            </div>
+          </header>
+
+          <!-- Introduction / Career Objective -->
+          <section class="objective mb-16" aria-labelledby="intro-title">
+            <div class="flex items-center">
+              <h2 id="intro-title" class="text-2xl font-semibold text-gray-800 dark:text-gray-200">👋 Introduction</h2>
+            </div>
+            <p class="text-gray-800 dark:text-gray-400 text-justify mt-3">
+              Hello, I’m <strong>Anaskhan</strong>, a dedicated <em>Full Stack Developer</em>, <em>Agentic AI Engineer</em>, and <em>Cloud Specialist</em> with a strong passion for building robust, scalable, and intelligent software systems. I excel at designing and implementing seamless frontend and backend solutions, creating autonomous AI systems capable of adaptive and context-aware decision-making, and deploying reliable cloud infrastructure for distributed applications.
+            </p>
+          </section>
+
+          <hr class="my-8 h-px bg-gray-100 border-0 dark:bg-gray-800" />
+
+          <!-- Current Projects -->
+          <section class="mb-16" aria-labelledby="projects-title">
+            <div class="flex items-center">
+              <h2 id="projects-title" class="text-2xl font-semibold text-gray-800 dark:text-gray-200">🚧 What I’m Working On</h2>
+            </div>
+            <ol id="qualification" class="lg:w-3/4 relative border-l border-gray-200 dark:border-gray-700 mt-6" aria-label="Current projects list">
+              <!-- Insert current project items here -->
+            </ol>
+          </section>
+
+          <hr class="my-8 h-px bg-gray-100 border-0 dark:bg-gray-800" />
+
+          <!-- Tech Skills -->
+          <section class="mb-16" aria-labelledby="skills-title">
+            <div class="flex items-center mb-6">
+              <h2 id="skills-title" class="text-2xl font-semibold text-gray-800 dark:text-gray-200">💻 Technical Skills</h2>
+            </div>
+            <div id="tech-skills" class="space-y-10" aria-label="List of technical skills">
+              <!-- Insert skills here -->
+            </div>
+          </section>
+
+          <hr class="my-8 h-px bg-gray-100 border-0 dark:bg-gray-800" />
+
+          <!-- Recent Works -->
+          <section class="mb-16" aria-labelledby="works-title">
+            <div class="flex items-center mb-4">
+              <h2 id="works-title" class="text-2xl font-semibold text-gray-800 dark:text-gray-200">🛠️ Recent Works & Projects</h2>
+            </div>
+            <div id="recent-works" class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-3" aria-label="Recent projects and portfolio items">
+              <!-- Insert recent works here -->
+            </div>
+
+            <!-- Contact Me Section -->
+            <br /><br />
+            <section class="contact-me mb-16 border-t border-gray-100 dark:border-gray-800 pt-6" aria-labelledby="contact-title">
+              <div class="flex items-center mb-6">
+                <h2 id="contact-title" class="text-2xl font-semibold text-gray-800 dark:text-gray-200">📬 Get in Touch</h2>
+              </div>
+              <div class="text-gray-800 dark:text-gray-400 text-justify mt-3">
+                <p>Email: <a href="mailto:anaskhangigyani7@gmail.com" class="text-blue-500" rel="noopener noreferrer">anaskhangigyani7@gmail.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/923281959698" class="text-blue-500" rel="noopener noreferrer">+92 328 1959698</a></p>
+              </div>
+            </section>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+<!-- Footer area  -->
+  <footer class="border-t border-gray-100 dark:border-gray-800 flex flex-wrap items-center justify-between p-6">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      © 2025 <a href="/" class="hover:underline" aria-label="Anaskhan homepage">Anaskhan</a>. All rights reserved.
+    </span>
+    <ul class="flex flex-wrap items-center text-sm text-gray-500 dark:text-gray-400">
+      <li>
+        <a href="/" class="mr-4 hover:underline md:mr-6" aria-label="About Anaskhan">About</a>
+      </li>
+      <li>
+        <a href="/" class="hover:underline" aria-label="Back to top">
+          Back to top <i class="fa-solid fa-arrow-turn-up" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
